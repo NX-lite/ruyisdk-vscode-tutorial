@@ -1,0 +1,6 @@
+# 建立独立 Git 仓库前保留的本地旧稿
+/archive/
+
+# Ruyi 虚拟环境与示例构建产物
+.ruyi-venv/
+examples/hello-ruyi/hello-riscv
