@@ -1,7 +1,5 @@
 # 【RuyiSDK VS Code 扩展】Linux 篇 01：准备 VS Code 或 VSCodium
 
-> 我的截图环境：Arch Linux / x86_64，VS Code 1.111.0
-
 这次整理环境时，我先记下 Linux 发行版、主机架构和 IDE 版本。后面如果遇到软件包无法安装或扩展行为不同，这几项信息通常最先用得上。
 
 ## 先记下主机环境
@@ -25,7 +23,7 @@ uname -r
 
 ![终端显示 Linux 发行版、Host 架构和内核版本](../assets/images/01-01-host-environment.png)
 
-*图 01-01：我先记录 Host 的发行版、架构和内核版本；截图环境为 Arch Linux/x86_64。*
+*图 01-01： Host 的发行版、架构和内核版本；截图环境为 Arch Linux/x86_64。*
 
 ## 选择 VS Code 还是 VSCodium
 
@@ -47,7 +45,7 @@ RuyiSDK 扩展当前要求 VS Code 1.88.0 或更高版本。VSCodium 基于 VS C
 
 ### 安装 VS Code
 
-我会从 [VS Code 官方下载页](https://code.visualstudio.com/Download)选择与发行版和主机架构匹配的软件包。以 Debian/Ubuntu 的本地 `.deb` 为例：
+从 [VS Code 官方下载页](https://code.visualstudio.com/Download)选择与发行版和主机架构匹配的软件包。以 Debian/Ubuntu 的本地 `.deb` 为例：
 
 ```bash
 sudo apt install ./code_VERSION_ARCH.deb
@@ -80,7 +78,7 @@ flatpak run com.vscodium.codium
 
 ![VS Code 关于窗口显示版本与运行平台](../assets/images/01-02-ide-version.png)
 
-*图 01-02：我在“关于”窗口里核对 VS Code 版本和运行平台。*
+*图 01-02：在“关于”窗口里核对 VS Code 版本和运行平台。*
 
 ## 打开一个工作区
 
@@ -96,7 +94,7 @@ mkdir -p ~/workspace/ruyi-tutorial
 
 使用 Remote SSH、Dev Containers 或类似功能时，IDE 窗口显示在本机，扩展和终端却可能运行在远端或容器里。Ruyi、工具链和虚拟环境应该装在真正执行构建命令的那一侧。
 
-我通常直接在集成终端里执行：
+通常直接在集成终端里执行：
 
 ```bash
 uname -m
@@ -108,8 +106,6 @@ command -v ruyi
 ![VS Code 打开工作区并在集成终端检查 Host 架构](../assets/images/01-03-workspace.png)
 
 *图 01-03：打开工作区后，我在集成终端核对 `ruyi` 路径和 Host 架构；终端身份信息已遮挡。*
-
-做到这里，我会确认 IDE 版本不低于 1.88.0、工作区能正常打开，并且已经知道后续命令实际运行在本机、远端还是容器里。下一篇再单独处理扩展安装。
 
 ## 相关链接
 
