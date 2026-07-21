@@ -1,8 +1,7 @@
 # 【RuyiSDK VS Code 扩展】Linux 篇 02：安装 RuyiSDK 扩展
 
-> 我的截图环境：VS Code 1.111.0，RuyiSDK 扩展 0.1.5
 
-这一篇我先只处理扩展本身，不急着安装 Ruyi。这样如果中途出问题，可以先判断是“扩展没有装好”，还是“扩展找不到 Ruyi”，不必把两件事混在一起排查。
+这一篇先只处理扩展本身，不急着安装 Ruyi。这样如果中途出问题，可以先判断是“扩展没有装好”，还是“扩展找不到 Ruyi”，不必把两件事混在一起排查。
 
 ## 在 VS Code 中在线安装
 
@@ -33,7 +32,7 @@ ruyisdk.ruyisdk-vscode-extension@实际版本号
 
 ![RuyiSDK 扩展详情页显示名称、发布者、版本和安装状态](../assets/images/02-01-marketplace.png)
 
-*图 02-01：我在详情页核对 RuyiSDK 发布者、扩展 ID、版本和安装状态；截图使用 0.1.5。*
+*图 02-01：在详情页核对 RuyiSDK 发布者、扩展 ID、版本和安装状态；截图使用 0.1.5。*
 
 ## 无法访问扩展市场时
 
@@ -51,14 +50,14 @@ code --install-extension "./ruyisdk-vscode-extension_VERSION.vsix"
 
 VSCodium 默认使用 Open VSX。RuyiSDK 是否能直接搜索到，要看对应版本是否已经同步到 Open VSX；RuyiSDK 下载页也提供 Open VSX 和 Marketplace 入口。
 
-如果暂时搜不到，我会从扩展的 GitHub Releases 下载 `.vsix`，再执行：
+如果暂时搜不到，从扩展的 GitHub Releases 下载 `.vsix`，再执行：
 
 ```bash
 codium --install-extension "./ruyisdk-vscode-extension_VERSION.vsix"
 codium --list-extensions --show-versions | grep -i ruyisdk
 ```
 
-我不建议只为了某一个扩展就把 VSCodium 改接 Microsoft Marketplace。使用维护者发布的 VSIX，来源和版本更容易核对。
+不建议只为了某一个扩展就把 VSCodium 改接 Microsoft Marketplace。使用维护者发布的 VSIX，来源和版本更容易核对。
 
 ## 第一次打开 Ruyi 侧边栏
 
