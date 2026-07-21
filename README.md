@@ -26,14 +26,11 @@
   → 交叉编译并检查 RISC-V ELF
   → 使用 QEMU 运行
   → 使用 QEMU + GDB 调试
-  └─ 有开发板后继续：镜像刷写、应用部署和 gdbserver
 ```
 
 ## 截图环境
 
 前三篇截图来自 Arch Linux/x86_64，使用 VS Code 1.111.0、Ruyi 0.50.0 和 RuyiSDK 扩展 0.1.5。版本号不必和截图相同，但建议在操作前记下自己的 IDE、扩展、Ruyi 和 Host 架构，遇到问题时更容易对照。
-
-截图中的用户名和终端身份信息已经遮挡。图片文件按文章编号保存在 [`assets/images/`](assets/images/README.md)。
 
 ## 参考资料
 
