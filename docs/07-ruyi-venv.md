@@ -25,9 +25,9 @@
 
 
 
-![Ruyi 虚拟环境创建向导](./assets/images/07-01-create-venv.png)
+![Ruyi 虚拟环境创建向导](../assets/07-01-create-venv.png)
 
-![Ruyi 虚拟环境创建向导的放大截图](./assets/images/07-01-create-venv-zoom.png)
+![Ruyi 虚拟环境创建向导的放大截图](../assets/07-01-create-venv-zoom.png)
 
 ## 激活环境
 
@@ -48,9 +48,9 @@ command -v ruyi-qemu
 ruyi-qemu --version
 ```
 
-![已激活的 Ruyi 虚拟环境](./assets/images/07-02-active-venv.png)
+![已激活的 Ruyi 虚拟环境](../assets/07-02-active-venv.png)
 
-![已激活的 Ruyi 虚拟环境放大截图](./assets/images/07-02-active-venv-zoom.png)
+![已激活的 Ruyi 虚拟环境放大截图](../assets/07-02-active-venv-zoom.png)
 
 ## 看一眼环境目录
 
@@ -67,9 +67,9 @@ find .ruyi-venv -maxdepth 2 -type f -o -type l
 - `binfmt.conf`：加入模拟器后可能生成。
 
 
-![Ruyi 虚拟环境目录](./assets/images/07-03-venv-files.png)
+![Ruyi 虚拟环境目录](../assets/07-03-venv-files.png)
 
-![Ruyi 虚拟环境目录的放大截图](./assets/images/07-03-venv-files-zoom.png)
+![Ruyi 虚拟环境目录的放大截图](../assets/07-03-venv-files-zoom.png)
 
 ## 停用与删除
 

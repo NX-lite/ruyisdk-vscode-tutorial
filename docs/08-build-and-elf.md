@@ -33,13 +33,13 @@ make clean
 - 成功时的 `Build succeeded`。
 
 
-![Ruyi Build Project 入口](./assets/images/08-01-build-entry.png)
+![Ruyi Build Project 入口](../assets/08-01-build-entry.png)
 
-![Ruyi Build Project 入口的放大截图](./assets/images/08-01-build-entry-zoom.png)
+![Ruyi Build Project 入口的放大截图](../assets/08-01-build-entry-zoom.png)
 
-![RuyiSDK Build 输出面板](./assets/images/08-02-build-output.png)
+![RuyiSDK Build 输出面板](../assets/08-02-build-output.png)
 
-![RuyiSDK Build 输出面板的放大截图](./assets/images/08-02-build-output-zoom.png)
+![RuyiSDK Build 输出面板的放大截图](../assets/08-02-build-output-zoom.png)
 
 ## 检查产物
 
@@ -51,7 +51,7 @@ readelf -h ./hello-riscv
 readelf -S ./hello-riscv | grep -E 'debug_info|symtab'
 ```
 
-关键字段应包括：
+从输出中应能确认以下信息：
 
 ```text
 ELF 64-bit
@@ -62,9 +62,9 @@ not stripped
 ```
 
 
-![RISC-V ELF 检查结果](./assets/images/08-03-elf-inspection.png)
+![RISC-V ELF 检查结果](../assets/08-03-elf-inspection.png)
 
-![RISC-V ELF 检查结果的放大截图](./assets/images/08-03-elf-inspection-zoom.png)
+![RISC-V ELF 检查结果的放大截图](../assets/08-03-elf-inspection-zoom.png)
 
 ## 扩展如何选择构建规则
 

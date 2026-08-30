@@ -14,9 +14,9 @@ Ruyi: Show News Cards
 
 状态栏同时显示当前激活的 venv；点击环境名称可以快速切换。
 
-![News 卡片列表和详情](./assets/images/04-04-news.png)
+![News 卡片列表和详情](../assets/04-04-news.png)
 
-![News 卡片列表和详情的放大截图](./assets/images/04-04-news-zoom.png)
+![News 卡片列表和详情的放大截图](../assets/04-04-news-zoom.png)
 
 ## Extract RuyiSDK Package
 
@@ -37,9 +37,9 @@ Extract RuyiSDK Package
 3. 选择源码包。
 4. 查看提取后项目自带的 README，再决定工具链和构建方式。
 
-![Extract RuyiSDK Package 界面](./assets/images/04-05-extract.png)
+![Extract RuyiSDK Package 界面](../assets/04-05-extract.png)
 
-![Extract RuyiSDK Package 界面的放大截图](./assets/images/04-05-extract-zoom.png)
+![Extract RuyiSDK Package 界面的放大截图](../assets/04-05-extract-zoom.png)
 
 ## Build Project
 
@@ -52,9 +52,9 @@ Ruyi: Build Project
 以及状态栏 `Build` 和编辑器标题栏 `Build Project`。
 
 
-![RuyiSDK Build 输出](./assets/images/04-01-build-output.png)
+![RuyiSDK Build 输出](../assets/04-01-build-output.png)
 
-![RuyiSDK Build 输出的放大截图](./assets/images/04-01-build-output-zoom.png)
+![RuyiSDK Build 输出的放大截图](../assets/04-01-build-output-zoom.png)
 
 ## Board Docs
 
@@ -62,9 +62,9 @@ Ruyi: Build Project
 
 板卡文档用于确认板型、镜像、工具链和部署步骤。
 
-![Board Docs 界面](./assets/images/04-06-board-docs.png)
+![Board Docs 界面](../assets/04-06-board-docs.png)
 
-![Board Docs 界面的放大截图](./assets/images/04-06-board-docs-zoom.png)
+![Board Docs 界面的放大截图](../assets/04-06-board-docs-zoom.png)
 
 ## 这一篇完成后的检查
 

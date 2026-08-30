@@ -25,9 +25,9 @@ riscv64-unknown-linux-gnu
 
 后面会用到的编译器和 GDB 命令都以 \riscv64-unknown-linux-gnu-` 为前缀。`。
 
-![gnu-upstream 软件包信息](./assets/images/05-02-gnu-upstream.png)
+![gnu-upstream 软件包信息](../assets/05-02-gnu-upstream.png)
 
-![gnu-upstream 软件包信息的放大截图](./assets/images/05-02-gnu-upstream-zoom.png)
+![gnu-upstream 软件包信息的放大截图](../assets/05-02-gnu-upstream-zoom.png)
 
 ## QEMU 先按 Host 架构判断
 
@@ -52,9 +52,9 @@ ruyi list --name-contains qemu-user-riscv-upstream --verbose
 2. 第 07 篇创建 venv 时选择该模拟器。
 3. 激活后使用 venv 生成的 `ruyi-qemu`。
 
-![QEMU 软件包的 Host 信息](./assets/images/05-03-qemu-host-check.png)
+![QEMU 软件包的 Host 信息](../assets/05-03-qemu-host-check.png)
 
-![QEMU 软件包 Host 信息的放大截图](./assets/images/05-03-qemu-host-check-zoom.png)
+![QEMU 软件包 Host 信息的放大截图](../assets/05-03-qemu-host-check-zoom.png)
 
 
 
