@@ -1,44 +1,75 @@
-# Linux 下 RuyiSDK VS Code 扩展上手记录
+# 小节索引与写作约定
 
-这是我整理 RuyiSDK VS Code 扩展使用过程时留下的实操记录，面向第一次接触 RuyiSDK 的同学。它不是官方教程；命令和截图都带着我当时使用的版本，插件升级后，个别菜单名称或界面位置可能会变化。
+这个目录用来放拆分后的正文。仓库首页只维护总路线、章节安排和完成状态，具体操作分别写进对应小节，避免所有内容挤在一个 README 里。
 
-这个仓库会按实际写作进度更新。目前先发布环境准备、扩展安装和 Ruyi 路径配置三篇，后续再补工具链、虚拟环境、交叉编译、QEMU 和 GDB。
+## 正文目录
 
-## 已发布
-
-| 编号 | 内容 | 状态 |
+| 编号 | 标题 | 验证状态 |
 | --- | --- | --- |
-| 01 | [准备 VS Code 或 VSCodium](docs/01-ide-setup.md) | 已实测 |
-| 02 | [安装 RuyiSDK 扩展](docs/02-extension-install.md) | 已实测 |
-| 03 | [让扩展找到 Ruyi](docs/03-ruyi-setup.md) | 已实测 |
+| 01 | [准备 VS Code 或 VSCodium](01-ide-setup.md) | 已实测 |
+| 02 | [安装 RuyiSDK 扩展](02-extension-install.md) | 已实测 |
+| 03 | [让扩展找到 Ruyi](03-ruyi-setup.md) | 已实测 |
+| 04 | [先逛一遍欢迎页和常用功能](04-extension-tour.md) | 待复测 |
+| 05 | [安装 GNU 工具链、QEMU 和基础工具](05-toolchain-qemu.md) | 已实测 |
+| 06 | [准备一个方便调试的 C 示例](06-example-project.md) | 已实测 |
+| 07 | [创建并激活 Ruyi 虚拟环境](07-ruyi-venv.md) | 已实测 |
+| 08 | [交叉编译并检查 RISC-V ELF](08-build-and-elf.md) | 已实测 |
+| 09 | [用 QEMU 运行程序](09-qemu-run.md) | 已实测 |
+| 10 | [用 QEMU 和 GDB 调试程序](10-qemu-gdb.md) | 已实测 |
 
-第一次阅读可以从第 01 篇开始。如果 VS Code 和扩展已经装好，也可以直接看第 03 篇的自动检测和手动路径设置。
+## 文件命名
 
-## 后续路线
+正文文件使用 `两位编号-英文短名.md`：
 
 ```text
-准备 VS Code / VSCodium
-  → 安装 RuyiSDK VS Code 扩展
-  → 检测、安装或指定 ruyi 可执行文件
-  → 认识欢迎页、Packages、Virtual Environments 和 News
-  → 安装 GNU 工具链、QEMU 与基础工具
-  → 创建示例工程和 Ruyi 虚拟环境
-  → 交叉编译并检查 RISC-V ELF
-  → 使用 QEMU 运行
-  → 使用 QEMU + GDB 调试
+01-ide-setup.md
+02-extension-install.md
+03-ruyi-setup.md
+04-extension-tour.md
+05-toolchain-qemu.md
+06-example-project.md
+07-ruyi-venv.md
+08-build-and-elf.md
+09-qemu-run.md
+10-qemu-gdb.md
 ```
 
-## 截图环境
+图片放在 `assets/images/`，使用 `小节编号-两位序号-内容短名.png`，例如 `04-01-home.png`、`08-02-elf-header.png`。同一小节新增图片时只追加序号，避免修改正文里已有的链接。
 
-前三篇截图来自 Arch Linux/x86_64，使用 VS Code 1.111.0、Ruyi 0.50.0 和 RuyiSDK 扩展 0.1.5。版本号不必和截图相同，但建议在操作前记下自己的 IDE、扩展、Ruyi 和 Host 架构，遇到问题时更容易对照。
+## 系列名称、标题和标签
 
-## 参考资料
+系列名称统一为“Linux 下 RuyiSDK VS Code 扩展上手记录”。单篇一级标题采用下面的格式：
 
-- [RuyiSDK VS Code 扩展文档](https://ruyisdk.org/docs/VSCode-Plugins/)
-- [Ruyi 包管理器安装文档](https://ruyisdk.org/docs/Package-Manager/installation/)
-- [RuyiSDK 下载页](https://ruyisdk.org/downloads/)
-- [RuyiSDK VS Code 扩展仓库](https://github.com/ruyisdk/ruyisdk-vscode-extension)
+```text
+# 【RuyiSDK VS Code 扩展】Linux 篇 04：先逛一遍欢迎页和常用功能
+```
 
-## License
+固定标签使用 `RuyiSDK`、`Linux`、`VS Code`、`RISC-V`、`上手记录`。再根据单篇内容补充 `VSCodium`、`QEMU`、`GDB`、`交叉编译` 或 `开发板`，不为凑数量添加无关标签。
 
-本仓库使用 [MIT License](LICENSE)。
+## 正文模板
+
+小节不要求每次把模板中的标题全部写出来，只保留确实有内容的部分。
+
+```markdown
+# 【RuyiSDK VS Code 扩展】Linux 篇 NN：这一节要完成的事
+
+用两三句话说明我为什么做这一步，以及做完后接着做什么。
+
+> 状态：待实测 / 已实测 / 待复测 / 待设备
+>
+> 实测版本：IDE、RuyiSDK 扩展、Ruyi
+>
+> 本篇标签：固定标签 + 与本篇内容相关的补充标签
+
+## 我用的环境
+
+## 实际操作
+
+## 我看到的结果
+
+## 遇到问题时
+
+## 相关链接
+```
+
+命令输出只截取帮助判断结果的部分。暂时没有设备或还没走通的地方直接保留状态，等复测后再补命令和截图。

@@ -4,3 +4,4 @@
 # Ruyi 虚拟环境与示例构建产物
 .ruyi-venv/
 examples/hello-ruyi/hello-riscv
+.DS_Store
