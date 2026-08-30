@@ -19,9 +19,9 @@ command -v ruyi-qemu
 ruyi-qemu --version
 ```
 
-![x86_64 Host 的 QEMU 运行命令](./assets/images/09-01-runtime-choice.png)
+![x86_64 Host 的 QEMU 运行命令](../assets/images/09-01-runtime-choice.png)
 
-![x86_64 Host 的 QEMU 运行命令放大截图](./assets/images/09-01-runtime-choice-zoom.png)
+![x86_64 Host 的 QEMU 运行命令放大截图](../assets/images/09-01-runtime-choice-zoom.png)
 
 ## 运行静态 ELF
 
@@ -39,9 +39,9 @@ Hello RISC-V, value=42
 0
 ```
 
-![QEMU 运行结果](./assets/images/09-02-qemu-run.png)
+![QEMU 运行结果](../assets/images/09-02-qemu-run.png)
 
-![QEMU 运行结果的放大截图](./assets/images/09-02-qemu-run-zoom.png)
+![QEMU 运行结果的放大截图](../assets/images/09-02-qemu-run-zoom.png)
 
 
 上一篇：[交叉编译并检查 RISC-V ELF](08-build-and-elf.md)  

@@ -26,9 +26,9 @@ ruyi-qemu -g 1234 ./hello-riscv
 
 命令启动后没有立即输出是正常的：程序在等待 GDB 连接。
 
-![QEMU gdbstub 等待连接](./assets/images/10-01-gdbstub.png)
+![QEMU gdbstub 等待连接](../assets/images/10-01-gdbstub.png)
 
-![QEMU gdbstub 等待连接的放大截图](./assets/images/10-01-gdbstub-zoom.png)
+![QEMU gdbstub 等待连接的放大截图](../assets/images/10-01-gdbstub-zoom.png)
 
 ## 终端 2：连接交叉 GDB
 
@@ -67,13 +67,13 @@ quit
 7. 最后 `continue` 让程序退出，终端 1 输出 Hello 信息。
 
 
-![GDB 命中 main 和 add 断点](./assets/images/10-02-gdb-breakpoints.png)
+![GDB 命中 main 和 add 断点](../assets/images/10-02-gdb-breakpoints.png)
 
-![GDB 断点的放大截图](./assets/images/10-02-gdb-breakpoints-zoom.png)
+![GDB 断点的放大截图](../assets/images/10-02-gdb-breakpoints-zoom.png)
 
-![GDB 查看 result 和 value](./assets/images/10-03-gdb-variables.png)
+![GDB 查看 result 和 value](../assets/images/10-03-gdb-variables.png)
 
-![GDB 变量结果的放大截图](./assets/images/10-03-gdb-variables-zoom.png)
+![GDB 变量结果的放大截图](../assets/images/10-03-gdb-variables-zoom.png)
 
 初次连接时可能看到 glibc 启动文件 `start.S` 不在本地的提示。只要之后能命中本项目的 `main/add`，它不影响调试。
 
@@ -118,9 +118,9 @@ quit
 ```
 
 
-![VS Code 图形调试](./assets/images/10-04-vscode-debug.png)
+![VS Code 图形调试](../assets/images/10-04-vscode-debug.png)
 
-![VS Code 图形调试的放大截图](./assets/images/10-04-vscode-debug-zoom.png)
+![VS Code 图形调试的放大截图](../assets/images/10-04-vscode-debug-zoom.png)
 
 
 

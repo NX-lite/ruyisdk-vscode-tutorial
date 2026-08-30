@@ -52,7 +52,7 @@ ruyi update
 ## 终端已经能找到 Ruyi
 
 先在 VS Code 的集成终端中取到绝对路径：
-
+../assets/images/
 ```bash
 command -v ruyi
 ```
